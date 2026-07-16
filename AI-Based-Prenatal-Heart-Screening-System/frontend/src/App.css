@@ -1,0 +1,36 @@
+.App {
+  text-align: center;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.App-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.login-card {
+  background-color: rgba(255, 255, 255, 0.9); /* light semi-transparent */
+  color: black;
+  border-radius: 15px;
+  padding: 30px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+/* Optional: table and prediction cards remain dark for contrast */
+.card {
+  background-color: rgba(234, 236, 240, 0.85);
+}
+
+/* Remove extra body margin */
+body, html {
+  margin: 0;
+  height: 100%;
+}

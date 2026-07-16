@@ -1,0 +1,205 @@
+/* =========================
+   GLOBAL SETTINGS
+========================= */
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+  overflow-y: auto;   
+  /* overflow: hidden; prevent scrolling */
+}
+.history-title {
+  background-color: rgba(17, 139, 240, 0.6);  /* dark transparent background */
+  color: #ffffff;
+  padding: 8px 15px;
+  display: inline-block;
+  border-radius: 8px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+body::before {
+  content: "";
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: url('../assets/back.jpg') no-repeat center center fixed;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  filter: brightness(0.5); /* dark overlay */
+}
+
+/* =========================
+   NAVBAR
+========================= */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 24px;
+  background: rgba(0, 0, 0, 0.85);
+  color: white;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar .brand {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.nav-right span {
+  margin-right: 15px;
+}
+
+.nav-right .btn {
+  background: #ff4b5c;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.nav-right .btn:hover {
+  background: #ff1f3c;
+}
+
+/* =========================
+   HOME PAGE
+========================= */
+.home-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 50px;
+}
+/* .home-buttons .btn {
+  padding: 14px 30px;
+  margin: 0 12px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 10px;
+
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.9);
+  background: rgba(0, 0, 0, 0.35);
+
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+
+  transition: all 0.3s ease;
+}
+.home-buttons .btn:hover {
+  background: white;
+  color: black;
+  border-color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+} */
+/* =========================
+   AUTH FORMS (LOGIN/SIGNUP)
+========================= */
+.home-buttons {
+  display: flex;
+  gap: 20px;
+}
+.auth-container-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.auth-container {
+  width: 360px;
+  padding: 35px;
+  background: rgba(0, 0, 0, 0.85);
+  border-radius: 15px;
+  color: white;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.6);
+}
+
+.auth-container h2 {
+  margin-bottom: 25px;
+  font-size: 28px;
+}
+
+.auth-container input {
+  width: 90%;
+  padding: 12px;
+  margin: 12px 0;
+  border-radius: 6px;
+  border: 1px solid rgba(255,255,255,0.4);
+  background: rgba(255,255,255,0.1);
+  color: white;
+}
+
+.auth-container input::placeholder {
+  color: rgba(255,255,255,0.7);
+}
+
+/* Bootstrap buttons override for auth forms */
+.auth-container .btn-primary,
+.auth-container .btn-success {
+  width: 95%;
+  margin-top: 15px;
+  padding: 12px;
+  font-weight: bold;
+  border-radius: 6px;
+}
+
+.auth-container .btn-primary {
+  background-color: #00d4ff;
+  color: black;
+  border: none;
+}
+
+.auth-container .btn-primary:hover {
+  background-color: #00a1cc;
+  color: white;
+}
+
+.auth-container .btn-success {
+  background-color: #28a745;
+  color: white;
+  border: none;
+}
+
+.auth-container .btn-success:hover {
+  background-color: #218838;
+}
+
+/* Error & message text */
+.error, .message {
+  color: #ff6b6b;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+/* Link text */
+.link {
+  color: #00d4ff;
+  cursor: pointer;
+  margin-top: 15px;
+  display: block;
+  font-weight: bold;
+  text-decoration: underline;
+}
