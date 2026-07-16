@@ -214,7 +214,7 @@ BS Computer Science
 
 Frontend Developer | MERN Stack Learner | AI & Machine Learning Enthusiast
 
-GitHub: https://github.com/yourusername
+GitHub: https://github.com/NimraIqbal-123
 
 ---
 
